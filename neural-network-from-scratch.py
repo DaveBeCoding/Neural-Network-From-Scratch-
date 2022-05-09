@@ -53,3 +53,14 @@ class multiply(Operation):
 
         self.inputs = [a_var, b_var]
         return a_var * b_var
+
+
+class matmul(Operation):
+    def __init__(self, a, b):
+
+        super().__init__([a, b])
+
+    def compute(self, a_mat, b_mat):
+
+        self.inputs = [a_mat, b_mat]
+        return a_mat.dot(b_mat)

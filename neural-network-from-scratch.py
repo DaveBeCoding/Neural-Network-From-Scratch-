@@ -42,3 +42,14 @@ class add(Operation):
 
         self.inputs = [x_var, y_var]
         return x_var + y_var
+
+
+class multiply(Operation):
+    def __init__(self, a, b):
+
+        super().__init__([a, b])
+
+    def compute(self, a_var, b_var):
+
+        self.inputs = [a_var, b_var]
+        return a_var * b_var

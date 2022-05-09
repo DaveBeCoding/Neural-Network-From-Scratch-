@@ -102,5 +102,5 @@ class Graph:
         """
         Sets this Graph instance as the Global Default Graph
         """
-        global _default_graph
+        global _default_graph  # global to be shared throughout the file
         _default_graph = self

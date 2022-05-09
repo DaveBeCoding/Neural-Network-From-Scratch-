@@ -89,3 +89,18 @@ class Variable:
         self.output_nodes = []
 
         _default_graph.variables.append(self)
+
+
+class Graph:
+    def __init__(self):
+
+        self.operations = []
+        self.placeholders = []
+        self.variables = []
+
+    def set_as_default(self):
+        """
+        Sets this Graph instance as the Global Default Graph
+        """
+        global _default_graph
+        _default_graph = self

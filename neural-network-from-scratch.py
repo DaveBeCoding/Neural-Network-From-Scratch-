@@ -64,3 +64,15 @@ class matmul(Operation):
 
         self.inputs = [a_mat, b_mat]
         return a_mat.dot(b_mat)
+
+
+class Placeholder:
+    """
+    A placeholder is a node that needs to be provided a value for computing the output in the Graph.
+    """
+
+    def __init__(self):
+
+        self.output_nodes = []
+
+        _default_graph.placeholders.append(self)

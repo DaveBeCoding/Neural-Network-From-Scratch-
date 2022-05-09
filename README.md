@@ -1,1 +1,6 @@
-hard code neural network
+## **Hard code neural network**
+
+`
+g = Graph()
+
+`

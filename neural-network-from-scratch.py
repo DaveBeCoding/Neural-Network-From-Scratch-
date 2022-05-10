@@ -1,3 +1,6 @@
+import numpy as np
+
+
 class Operation:
     """
     An Operation is a node in a "Graph". TensorFlow will also use this concept of a Graph.
@@ -104,3 +107,6 @@ class Graph:
         """
         global _default_graph  # global to be shared throughout the file
         _default_graph = self
+
+
+g = Graph()

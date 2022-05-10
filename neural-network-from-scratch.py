@@ -173,3 +173,4 @@ class Session:
 
 
 sess = Session()
+result = sess.run(operation=z, feed_dict={x: 10})

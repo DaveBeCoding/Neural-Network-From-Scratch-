@@ -170,3 +170,6 @@ class Session:
 
         # Return the requested node value
         return operation.output
+
+
+sess = Session()

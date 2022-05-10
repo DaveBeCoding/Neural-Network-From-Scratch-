@@ -112,3 +112,5 @@ class Graph:
 g = Graph()
 g.set_as_default()
 A = Variable(10)
+b = Variable(1)
+x = Placeholder()

@@ -177,3 +177,4 @@ result = sess.run(operation=z, feed_dict={x: 10})
 print(result)
 
 g = Graph()
+g.set_as_default()

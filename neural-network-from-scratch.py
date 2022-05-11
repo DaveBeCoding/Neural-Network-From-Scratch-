@@ -178,3 +178,4 @@ print(result)
 
 g = Graph()
 g.set_as_default()
+A = Variable([[10, 20], [30, 40]])
